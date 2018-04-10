@@ -359,7 +359,7 @@ if [ "$1" = 'rabbitmq-server' ] && [ "$shouldWriteConfig" ]; then
 				RABBITMQ_MANAGEMENT_PORT=15678
 			fi
 			rabbitManagementListenerConfig+=(
-				"{ port, $RABBITMQ_MANAGEMENT_PORT }"
+				"{ port, 15678 }"
 				'{ ssl, false }'
 			)
 		fi
