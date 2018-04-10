@@ -355,7 +355,7 @@ if [ "$1" = 'rabbitmq-server' ] && [ "$shouldWriteConfig" ]; then
 				"{ ssl_opts, $(rabbit_array "${rabbitManagementSslOptions[@]}") }"
 			)
 		else
-			if [ -z "$RABBITMQ_PORT" ]; then
+			if [ -z "$RABBITMQ_MANAGEMENT_PORT" ]; then
 				RABBITMQ_MANAGEMENT_PORT=15672
 			fi
 			rabbitManagementListenerConfig+=(
