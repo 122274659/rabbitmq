@@ -356,7 +356,7 @@ if [ "$1" = 'rabbitmq-server' ] && [ "$shouldWriteConfig" ]; then
 			)
 		else
 			rabbitManagementListenerConfig+=(
-				'{ port, 15672 }'
+				'{ port, 15678 }'
 				'{ ssl, false }'
 			)
 		fi
