@@ -356,7 +356,7 @@ if [ "$1" = 'rabbitmq-server' ] && [ "$shouldWriteConfig" ]; then
 			)
 		else
 			if [ -z "$RABBITMQ_MANAGEMENT_PORT" ]; then
-				RABBITMQ_MANAGEMENT_PORT=15672
+				RABBITMQ_MANAGEMENT_PORT=15678
 			fi
 			rabbitManagementListenerConfig+=(
 				"{ port, $RABBITMQ_MANAGEMENT_PORT }"
